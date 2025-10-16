@@ -12,7 +12,7 @@ function knightTraveils(startPos, endPos){
             }
             let [found, path] = buildPaths(paths, firstNode, endPos, nextPos, visited)
             if(found){
-                console.log(`You made it in ${path.length} moves! Here's your path:`)
+                console.log(`You made it in ${path.length-1} moves! Here's your path:`)
                 for(const move of path){
                     console.log(`[${move.toString()}]`);   
                 }
